@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>01_HelloReact</title>
+</head>
+<body>
+    <!-- 为reacth准备一个容器 -->
+    <div id='test'></div>
+    <input type="text">
+    <!-- 引入react核心库 -->
+    <script type="text/javascript" src="../js/react.development.js"></script>
+    <!-- 引入react-dom,用于支持react操作DOM -->
+    <script type="text/javascript" src="../js/react-dom.development.js"></script>
+    <!-- 引入babel,用于将react的jsx装换为原生js -->
+    <script type="text/javascript" src="../js/babel.min.js"></script>
+
+    <script type="text/babel">
+    // 创建一个虚拟DOM
+    let vDOM = <h1>HELLO,REACT</h1>
+    // 告诉react帮我们把刚才创建的虚拟DOM放在页面上
+    ReactDOM.render(vDOM,document.getElementById('test'));
+    </script>
+
+</body>
+</html>
